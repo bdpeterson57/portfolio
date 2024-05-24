@@ -3,30 +3,30 @@
   }
   
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
     background-image: url('img/bricks.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   /* Style the header */
   header {
     background-color: #230700;
+    color: white;
+    font-size: 35px;
     padding: 30px;
     text-align: center;
-    font-size: 35px;
-    color: white;
   }
   
   /* Create two columns/boxes that floats next to each other */
   nav {
-    float: left;
-    width: 30%;
     background: #34011F;
+    color: white;
+    float: left;
     padding: 20px;
     text-decoration: none;
-    color: white;
+    width: 20%;
   }
   
   /* Style the list inside the menu */
@@ -36,17 +36,17 @@
   }
   
   aside {
-      padding: 20px;
-      width: 20%;
-      float: left;
-      background-color: lightgray;
+    background-color: lightgray;
+    float: left;
+    padding: 20px;
+    width: 20%;
   }
 
   article {
+    background-color: #f1f1f1;
     float: left;
     padding: 20px;
     width: 80%;
-    background-color: #f1f1f1;
   }
   
   section {
@@ -56,23 +56,23 @@
 
   /* Clear floats after the columns */
   section::after {
+    clear: both;
     content: "";
     display: table;
-    clear: both;
   }
   
   /* Style the footer */
   footer {
     background-color: #777;
+    color: white;
     padding: 10px;
     text-align: center;
-    color: white;
   }
   
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-  @media (max-width: 600px) {
-    nav, article {
-      width: 100%;
-      height: auto;
+    @media (max-width: 600px) {
+        nav, article {
+            height: auto;
+            width: 100%;
+        }
     }
-  }
